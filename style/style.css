@@ -261,6 +261,107 @@ main> section{
 }
 
 
+/* why choose us */
+#why-us .section-txt{
+  padding: 0 263px;
+  margin-bottom: 48px;
+}
+
+#why-us .section-txt h2{
+  margin-bottom: 24px;
+}
+
+#why-us  .cards{
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+#why-us  .cards .card-1{
+  background-color: rgba(251, 181, 99, 0.05);
+  border: 1px solid rgba(251, 181, 99, 0.2);
+}
+
+#why-us  .cards .card-2{
+  background-color: rgba(41, 206, 246, 0.05);
+  border: 1px solid rgba(41, 206, 246, 0.2);
+}
+
+#why-us  .cards .card-3{
+  background-color: rgba(233, 68, 68, 0.05);
+  border: 1px solid rgba(233, 68, 68, 0.2);
+}
+
+#why-us  .cards .card{
+  width: 573px;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+#why-us  .cards .card h3{
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: rgb(19, 19, 24);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+
+
+
+
+
+
+/* footer style */
+footer{
+  padding: 110px 284px;
+  background: rgba(19, 19, 24, 0.05);
+}
+
+footer .container >a {
+  column-gap: 16px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+footer .container >a h2 span{
+  font-weight: 800;
+}
+
+footer .container  p{
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+footer .container .social-icons{
+  justify-content: center;
+  column-gap: 32px;
+  align-items: center;
+  border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+  padding-bottom: 50px;
+}
+
+footer .container .social-icons a{
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: rgb(19, 19, 24);
+}
+
+footer .container p.copyright{
+  margin-top: 50px;
+  margin-bottom: 0;
+  color: rgb(19, 19, 24);
+  font-weight: 300;
+}
+
+footer .container p.copyright  a{
+  text-decoration: none;
+  color: rgb(19, 19, 24);
+}
+
 
 /* for small device(below 576px) */
 @media screen and (max-width:576px) {
@@ -346,6 +447,10 @@ main > section{
   row-gap: 20px;
 }
 
+#popular-tours .section-txt h2{
+  text-align: center;
+}
+
 #popular-tours .section-txt ul li{
   margin-bottom: 8px;
   text-align: left;
@@ -383,4 +488,40 @@ main > section{
   height: 176px;
 }
 
+
+/* why choose us */
+#why-us .section-txt {
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+#why-us .section-txt h2 {
+  margin-bottom: 16px;
+}
+
+#why-us .cards .card {
+  width: 100%;
+}
+
+footer{
+  padding: 50px 20px;
+}
+
+footer .container p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+footer .container .social-icons {
+  padding-bottom: 24px;
+}
+
+footer .container .social-icons a {
+  font-size: 2rem;
+}
+
+footer .container p.copyright {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
 }
