@@ -6,4 +6,5 @@ This is the fifth landing page design during web-development course which is lit
 
 ### Sections:
 1. Hero
-2. 
+2. Our Popular Tours
+3. Choose Your Destination
