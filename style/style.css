@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+
 *{
   margin: 0;
   padding: 0;
@@ -128,4 +129,258 @@ header nav ul li a{
   margin-top: 24px;
   margin-bottom: 48px ;
   color: #ffffff;
+}
+
+#banner form{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#banner form input[type="text"], #banner form select{
+  width: 174px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 16px;
+}
+
+#banner form input[type="text"]:focus-visible, #banner form select:focus-visible , #banner form button:focus-visible{
+  outline: none;
+}
+
+#banner form button{
+  align-items: center;
+  column-gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+
+/* main section style */
+main{
+  margin: 100px 135px;
+}
+
+main> section{
+  margin-bottom: 100px;
+}
+
+/* popular tours style */
+#popular-tours {
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+}
+
+#popular-tours .section-txt{
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+#popular-tours .section-txt ul{
+  margin-left: 20px;
+}
+
+#popular-tours .section-txt ul li{
+  margin-bottom: 16px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+#popular-tours .section-txt button{
+  color: #ffffff;
+  width: fit-content;
+}
+
+
+/* your destinamtion */
+#your-destination> p{
+  margin-top: 24px;
+  padding: 0 163px;
+}
+
+#your-destination .places{
+  margin-top: 48px;
+  display: grid;
+  row-gap: 24px;
+}
+
+#your-destination .places img{
+  filter: brightness(80%);
+  width: 100%;
+  height: 300px;
+}
+
+
+#your-destination .places .row-1, 
+#your-destination .places .row-2, 
+#your-destination .places .row-3{
+  display: grid;
+  column-gap: 24px;
+}
+
+#your-destination .places .row-1{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#your-destination .places .row-2{
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#your-destination .places .row-3{
+  grid-template-columns: 1fr 2fr;
+}
+
+#your-destination .places .row-1 .img,
+#your-destination .places .row-2 .img,
+#your-destination .places .row-3 .img{
+  position: relative;
+}
+
+#your-destination .places .row-1 .img p,
+#your-destination .places .row-2 .img p,
+#your-destination .places .row-3 .img p{
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* for small device(below 576px) */
+@media screen and (max-width:576px) {
+  header{
+    margin: 18px 20px;
+  }
+
+  header nav{
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 18px;
+  }
+
+  header nav ul {
+    column-gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li a {
+  font-size: 1rem;
+}
+
+
+#banner {
+  border-radius: 16px;
+  padding:32px 16px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+#banner h1 {
+  color: #ffffff;
+  font-size: 1.375rem;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+#banner p {
+  font-size: 0.875rem;
+  margin-top: 8px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+  
+
+#banner form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 0px;
+  row-gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+#banner form input[type="text"], #banner form select {
+  width:100%;
+}
+
+
+#banner form button {
+  justify-content: center;
+}
+
+
+
+/* main style */
+main{
+  margin: 50px 20px;
+}
+
+main > section{
+  margin-bottom: 60px;
+}
+
+/* popular tours */
+#popular-tours {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  column-gap: 0px;
+  row-gap: 20px;
+}
+
+#popular-tours .section-txt ul li{
+  margin-bottom: 8px;
+  text-align: left;
+  padding-right: 0px;
+}
+
+.section-img img{
+  width: 100%;
+}
+
+
+/* your-destination */
+
+#your-destination> p {
+
+  margin-top: 16px;
+  padding: 0px 10px;
+}
+
+
+#your-destination .places {
+  margin-top: 24px;
+  display: grid;
+  row-gap: 16px;
+}
+
+
+#your-destination .places .row-1, #your-destination .places .row-2, #your-destination .places .row-3 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+#your-destination .places img {
+  height: 176px;
+}
+
 }

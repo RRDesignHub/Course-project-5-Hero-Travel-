@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hero Travel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -29,13 +30,86 @@
       <p class="description">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
       <form action="">
         <input placeholder="Where go..." type="text">
-        <input placeholder="Where go..." type="">
-        <input type="submit" value="Find Now" class="btn">
+        <select name="time"  id="">
+          <option value="" disabled selected >When?</option>
+          <option value="Jan">January 1st</option>
+          <option value="Dec">December 1st</option>
+          <option value="Jul">July 1st</option>
+          <option value="Feb">February 1st</option>
+        </select>
+
+        <select name="type" id="">
+          <option value="" disabled selected>Select Type...</option>
+        </select>
+        <button class="btn d-flex"><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
+        
       </form>
     </section>
   </header>
 
-  <main></main> 
+  <main>
+    <section id="popular-tours" class="d-flex">
+      <div class="section-txt">
+        <h2 class="section-heading">Our Popular Tours</h2>
+        <p class="description">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+
+        <ul>
+          <li class="description">Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li>
+          <li class="description">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+          <li class="description">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+        </ul>
+        <p class="description">Amet consectetur. Vulputate commodo felis molestie risus 
+          ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+        <button class="btn">Read More</button>
+      </div>
+      <div class="section-img">
+        <img src="./Images/Rectangle 4.png" alt="Mountain image">
+      </div>
+    </section>
+
+    <section id="your-destination">
+      <h2 class="section-heading txt-center">Choose Your Destination</h2>
+      <p class="description txt-center">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+
+      <div class="places">
+        <div class="row-1">
+          <div class="img">
+            <img src="./Images/maldive.png" alt="">
+            <p>Maldives</p>
+          </div>
+          <div class="img">
+            <img src="./Images/Indonesia.png" alt="">
+            <p>Indonesia</p>
+          </div>
+          
+        </div>
+        <div class="row-2">
+          <div class="img">
+            <img src="./Images/Srilanka.png" alt="">
+            <p>Srilanka</p>
+          </div>
+          <div class="img">
+            <img src="./Images/North America.png" alt="">
+            <p>North America</p>
+          </div>
+          <div class="img">
+            <img src="./Images/Kashmir.png" alt="">
+            <p>Kashmir</p>
+          </div>
+        </div>
+        <div class="row-3">
+          <div class="img">
+            <img src="./Images/Bangladesh.png" alt="">
+            <p>Bangladesh</p>
+          </div>
+          <div class="img">
+            <img src="./Images/Bandarban.png" alt="">
+            <p>Bandarban</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
 
   <footer></footer>
 </body>
